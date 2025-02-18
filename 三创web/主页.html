@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书缘桥——二手书籍交易平台</title>
+</head>
+<style>
+ @keyframes zoomIn {
+from { transform: scale(0); }
+to { transform: scale(1); }
+ }
+ @keyframes headslide {
+    from {
+        transform:  translateX(-100%);
+        opacity: 0;;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.title_photo{
+text-align: center;
+animation:headslide 1s ease-in-out;
+/* background-color: rgb(246, 229, 213); */
+}
+form {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 70px;
+animation:headslide 1s ease-in-out;
+}
+input[type="text"] {
+padding: 20px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 4px;
+width: 100vh;
+animation:headslide 1s ease-in-out;
+}
+button {
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+background-color: #00ff37;
+color: white;
+border-radius: 4px;
+cursor: pointer;
+margin-left: 10px;
+        }
+button:hover {
+background-color: #0056b3;
+}
+.words1{
+text-align: center;
+font-family: "KaiTi";
+font-size: xx-large;
+background-color: bisque;
+animation:headslide 1s ease-in-out;
+}
+.words2{
+text-align: center;
+font-size: xx-large;
+font-family: "YouYuan";
+animation:headslide 1s ease-in-out;
+}
+body{
+    width: 80%;
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+}
+.choices{
+    display: grid;
+}
+.grid-item{
+    text-decoration: none;
+    animation: zoomIn 2s;
+}
+.grid-item p {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "YouYuan";
+    font-size: xx-large;
+     color: rgb(252, 3, 3);
+  }
+
+  .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .grid-item:active {
+    transform: translateY(-2px);
+  }
+</style>
+<body>
+<div class="title_photo">
+<img src="photos/image.png" alt="书缘桥">
+</div>
+<div class="words1">
+    <p>快开学了，你是否还为没有买到课本而发愁？<br>
+       看着全新书籍的价格，再看看自己的余额，感觉有点力不从心？<br>
+       想看看二手书，但担心质量不怎样？担心没办法在规定的时间内拿到？担心二手书的价格问题？<br>
+       <h2>没关系</h2>
+       这里将会有所有的解答！！！<br>
+    </p>
+</div>
+<form action="/search" method="get">
+    <input type="text" name="query" placeholder="查找你想要的书籍······">
+    <button type="submit">搜索</button>
+</form>
+<div class="words2">
+<p>
+    为了能便利您的寻找，您可以直接搜索书名，也可以直接在下方选择您的学院和专业，查找您的课本。<br>
+</p>
+<h1>↓↓↓↓↓↓↓↓↓↓</h1>
+</div>
+<div class="choices">
+    <a href="哲学与宗教学院.html" class="grid-item">
+        <p>哲学与宗教学院</p>
+    </a>
+    <a href="经济学院.html" class="grid-item">
+        <p>经济学院</p>
+    </a>
+    <a href="法学院.html" class="grid-item">
+        <p>法学院</p>
+    </a>
+    <a href="民族学与社会学学院.html" class="grid-item">
+        <p>民族学与社会学学院</p>
+    </a>
+    <a href="历史文化学院.html" class="grid-item">
+        <p>历史文化学院</p>
+    </a>
+    <a href="教育学院.html" class="grid-item">
+        <p>教育学院</p>
+    </a>
+    <a href="文学院.html" class="grid-item">
+        <p>文学院</p>
+    </a>
+    <a href="国际教育学院.html" class="grid-item">
+        <p>国际教育学院</p>
+    </a>
+    <a href="新闻与传播学院.html" class="grid-item">
+        <p>新闻与传播学院</p>
+    </a>
+    <a href="外国语学院.html" class="grid-item">
+        <p>外国语学院</p>
+    </a>
+    <a href="管理学院.html" class="grid-item">
+        <p>管理学院</p>
+    </a>
+    <a href="少数民族语言文学学院.html" class="grid-item">
+        <p>少数民族语言文学学院</p>
+    </a>
+    <a href="生命与环境科学学院.html" class="grid-item">
+        <p>生命与环境科学学院</p>
+    </a>
+    <a href="理学院.html" class="grid-item">
+        <p>理学院</p>
+    </a>
+    <a href="信息工程学院.html" class="grid-item">
+        <p>信息工程学院</p>
+    </a>
+    <a href="海南国际学院.html" class="grid-item">
+        <p>海南国际学院</p>
+    </a>
+    <a href="美术学院.html" class="grid-item">
+        <p>美术学院</p>
+    </a>
+    <a href="音乐学院.html" class="grid-item">
+        <p>音乐学院</p>
+    </a>
+    <a href="舞蹈学院.html" class="grid-item">
+        <p>舞蹈学院</p>
+    </a>
+    <a href="体育学院.html" class="grid-item">
+        <p>体育学院</p>
+    </a>
+
+
+</div>
+
+
+
+
+</body>
+</html>

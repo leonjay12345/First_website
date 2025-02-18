@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课本->信息与计算科学</title>
+</head>
+<style>
+@keyframes zoomIn {
+from { transform: scale(0); }
+to { transform: scale(1); }
+ }
+body{
+    width: 90%;
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    animation: zoomIn 2s;
+}
+.choices{
+    display: grid;
+}
+.grid-item{
+    text-decoration: none;
+    animation: zoomIn 2s;
+}
+.grid-item p {
+    margin-top: 10px;
+    text-align:center;
+    font-family: "YouYuan";
+    font-size: xx-large;
+     color: rgb(252, 3, 3);
+  }
+  .grid-item img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 50%;
+    animation: zoomIn 2s;
+    text-align: center;
+  }
+
+  .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .grid-item:active {
+    transform: translateY(-2px);
+  }
+
+
+
+</style>
+<body>
+    <div class="choices">
+    <a href="数学分析.html" class="grid-item">
+     <img src="/photos/数分.jpg" alt="数学分析">
+    <p>数学分析</p>
+    </a>
+    <a href="高等代数.html" class="grid-item">
+        <img src="/photos/高代.jpg" alt="高等代数">
+       <p>高等代数</p>
+       </a>
+       <a href="解析几何.html" class="grid-item">
+        <img src="/photos/解几.jpg" alt="解析几何">
+       <p>解析几何</p>
+       </a>
+       <a href="C语言程序设计.html" class="grid-item">
+        <img src="/photos/C语言.jpg" alt="C语言">
+       <p>C语言程序设计</p>
+       </a>
+</div>
+</body>
+</html>
